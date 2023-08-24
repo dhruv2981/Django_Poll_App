@@ -1,0 +1,91 @@
+virtual env
+
+pip3 install virtualenv
+python3 -m venv project_django
+source project_django/bin/activate 
+deactivate se deactivate ho jayega
+pip install django
+
+django 
+project omniport
+app bhawan app
+
+
+wsgi file
+all inbuilt files
+
+settings.py mei saare chnages krte hain database connection
+8000 port
+
+mvc  mvt(django)  template
+django mei controller inbuilt hai
+sidhha use krte hai
+
+create app in project
+
+in models.py
+from django.db import models
+python manage.py startup app1
+
+
+add app in installed app
+
+pyhton3 manage.py makemigrations
+pyhton3 manage.py showmigrations
+pyhton3 manage.py migrate
+
+python3 manage.py migrate
+python3 manage.py runserver
+
+python3 manage.py superuser
+
+meta class 
+
+groups and user in django administration
+
+verbose name and vrbose name plural
+
+django relationship
+three types 
+one one 
+many one foreign key
+many many 
+
+postman
+backend check for security check
+
+validators
+
+order of migration in memeber role and projects
+
+
+admin.py pe models register krne hai
+
+naya create krne pe db mei decreasing order of primary key 
+
+python manage.py shell
+is project ke respect mei shell    we access views,db  by importing in relative order
+
+__str function in python magic function
+foreign key null nhi krni chahiye
+
+small bug change krne ke liye development mei db use krna aaana chahiye
+
+m=modelname.objects.all()
+m.members.all()
+filter
+get mei vo chiz pass krte hai jo unique hoti hai
+and,or lgane mei q import krna hai
+
+__dict used in shell
+
+class based (used more less code) khud se padhna and function based view
+get,filter
+
+backend ke data ko template mei nhi daalna
+
+pehle request middleware ke pass jati hai phr url se map hoti hai
+
+render,redirect
+
+django template use nhi krenge
