@@ -1,0 +1,23 @@
+{% comment %} <table border="1">
+  <thead>
+    {{question.question_text}}
+  </thead>
+  <tbody>
+    {%for q in question.choice_set.all%}:
+    <tr>
+      <td>{{forloop.counter}}</td>
+      <td>{{q.choice_text}}</td>
+      <td>{{q.votes}}</td>
+    </tr>
+    {%endfor%}
+  </tbody>
+</table> {% endcomment %}
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
